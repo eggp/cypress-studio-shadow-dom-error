@@ -1,0 +1,6 @@
+{  "chromeWebSecurity": false,
+  "experimentalStudio": true,
+  "viewportWidth": 500,
+  "viewportHeight": 300,
+  "includeShadowDom": true
+}

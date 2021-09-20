@@ -1,0 +1,53 @@
+@use '~@angular/material' as mat;
+@import 'material-theme-color';
+
+@include mat.core(/*$rr-typography*/);
+
+@mixin rr-angular-material-theme($theme, $rr-reverse-theme) {
+  @include mat.core-theme($theme);
+  @include mat.autocomplete-theme($theme);
+  //@include mat.badge-theme($theme);
+  //@include mat.bottom-sheet-theme($theme);
+  @include mat.button-theme($theme);
+  //@include mat.button-toggle-theme($rr-reverse-theme);
+  @include mat.card-theme($theme);
+  @include mat.checkbox-theme($rr-reverse-theme);
+  //@include mat.chips-theme($theme);
+  //@include mat.table-theme($theme);
+  @include mat.datepicker-theme($theme);
+  @include mat.dialog-theme($theme);
+  @include mat.divider-theme($theme);
+  //@include mat.expansion-theme($theme);
+  @include mat.form-field-theme($rr-reverse-theme);
+  //@include mat.grid-list-theme($theme);
+  @include mat.icon-theme($theme);
+  @include mat.input-theme($rr-reverse-theme);
+  @include mat.list-theme($theme);
+  //@include mat.menu-theme($theme);
+  //@include mat.paginator-theme($theme);
+  @include mat.progress-bar-theme($theme);
+  @include mat.progress-spinner-theme($theme);
+  @include mat.radio-theme($rr-reverse-theme);
+  @include mat.select-theme($rr-reverse-theme);
+  //@include mat.sidenav-theme($theme);
+  //@include mat.slide-toggle-theme($theme);
+  //@include mat.slider-theme($theme);
+  //@include mat.stepper-theme($theme);
+  //@include mat.tabs-theme($theme);
+  //@include mat.toolbar-theme($theme);
+  @include mat.tooltip-theme($theme);
+  @include mat.snack-bar-theme($theme);
+  //@include mat.bottom-sheet-theme($theme);
+  //@include mat.badge-theme($theme);
+}
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+//@include mat.all-component-themes(
+//  $WebcomponentDynamicForm-theme
+//);
+@include rr-angular-material-theme(
+  $WebcomponentDynamicForm-theme,
+  $WebcomponentDynamicForm-reverse-theme
+);

@@ -1,0 +1,16 @@
+@import '../../styles/material-theme';
+
+.cdk-overlay-container {
+  z-index: 999999 !important;
+}
+
+:host {
+  display: block;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: rgb(0, 0, 0);
+}
